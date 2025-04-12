@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relevé Bancaire</title>
+    <style>
+        /* CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Relevé Bancaire</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#form">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Relevé Bancaire</h2>
+        <p>Your financial documents made simple.</p>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing Structure</h2>
+        <table>
+            <tr>
+                <th>Plan</th>
+                <th>Features</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Basic</td>
+                <td>Access to monthly statements</td>
+                <td>$9.99/month</td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>Advanced analytics</td>
+                <td>$19.99/month</td>
+            </tr>
+            <tr>
+                <td>Enterprise</td>
+                <td>Unlimited users and custom solutions</td>
+                <td>Contact us</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="form">
+        <h2>Contact Us</h2>
+        <form id="bankForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="query">Your Query:</label>
+            <textarea id="query" name="query" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        // JavaScript
+        document.getElementById('bankForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const query = document.getElementById('query').value;
+
+            if (name && email && query) {
+                alert(`Thank you, ${name}. We will respond to your query soon!`);
+            } else {
+                alert('Please fill out all required fields.');
+            }
+        });
+    </script>
+</body>
+</html>
