@@ -1,18 +1,11 @@
-// JavaScript for dynamic page loading
-function loadPage(page) {
-    const contentDiv = document.getElementById('content');
-
-    fetch(page)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Error loading ${page}: ${response.statusText}`);
-            }
-            return response.text();
-        })
-        .then(data => {
-            contentDiv.innerHTML = data;
-        })
-        .catch(error => {
-            contentDiv.innerHTML = `<p>${error.message}</p>`;
-        });
+// Smooth scroll to a section
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
 }
+
+// Contact form submission
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent form submission
+    const name = document.getElementById('name').value;
+    alert(`Thank you, ${name}! Your message has been sent.`);
+});
