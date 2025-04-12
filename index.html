@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relevé Bancaire</title>
+    <title>Relevé Bancaire - West Africa</title>
     <style>
         /* CSS */
         body {
@@ -13,10 +13,10 @@
         }
 
         header {
-            background-color: #4CAF50;
-            padding: 10px;
+            background-color: #007BFF;
             color: white;
             text-align: center;
+            padding: 20px 0;
         }
 
         nav ul {
@@ -29,38 +29,54 @@
             margin: 0 15px;
         }
 
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
         section {
             padding: 20px;
-            margin: 10px;
         }
 
         table {
-            width: 100%;
+            width: 50%;
             border-collapse: collapse;
+            margin: 20px auto;
         }
 
-        table th, table td {
-            border: 1px solid #ddd;
-            padding: 8px;
+        table, th, td {
+            border: 1px solid #ccc;
         }
 
-        button {
-            background-color: #4CAF50;
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007BFF;
             color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Relevé Bancaire</h1>
+        <h1>Relevé Bancaire - West Africa</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#form">Contact</a></li>
+                <li><a href="#countries">Country Details</a></li>
             </ul>
         </nav>
     </header>
@@ -71,61 +87,154 @@
     </section>
 
     <section id="pricing">
-        <h2>Pricing Structure</h2>
+        <h2>General Pricing Table</h2>
         <table>
             <tr>
-                <th>Plan</th>
-                <th>Features</th>
-                <th>Price</th>
+                <th>Pays</th>
+                <th>Montant</th>
+                <th>Prix</th>
             </tr>
             <tr>
-                <td>Basic</td>
-                <td>Access to monthly statements</td>
-                <td>$9.99/month</td>
+                <td>Côte d'Ivoire</td>
+                <td>10,000 FCFA</td>
+                <td>$16.67</td>
             </tr>
             <tr>
-                <td>Premium</td>
-                <td>Advanced analytics</td>
-                <td>$19.99/month</td>
+                <td>Ghana</td>
+                <td>120 GHS</td>
+                <td>$10.00</td>
             </tr>
             <tr>
-                <td>Enterprise</td>
-                <td>Unlimited users and custom solutions</td>
-                <td>Contact us</td>
+                <td>Nigeria</td>
+                <td>7,500 NGN</td>
+                <td>$16.33</td>
+            </tr>
+            <tr>
+                <td>Senegal</td>
+                <td>9,000 FCFA</td>
+                <td>$15.00</td>
+            </tr>
+            <tr>
+                <td>Burkina Faso</td>
+                <td>8,000 FCFA</td>
+                <td>$13.33</td>
+            </tr>
+            <tr>
+                <td>Mali</td>
+                <td>7,000 FCFA</td>
+                <td>$11.67</td>
+            </tr>
+            <tr>
+                <td>Benin</td>
+                <td>6,500 FCFA</td>
+                <td>$10.83</td>
+            </tr>
+            <tr>
+                <td>Togo</td>
+                <td>6,000 FCFA</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>Guinea</td>
+                <td>850,000 GNF</td>
+                <td>$9.55</td>
+            </tr>
+            <tr>
+                <td>Liberia</td>
+                <td>2,500 LRD</td>
+                <td>$13.64</td>
             </tr>
         </table>
     </section>
 
-    <section id="form">
-        <h2>Contact Us</h2>
-        <form id="bankForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="query">Your Query:</label>
-            <textarea id="query" name="query" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
+    <section id="countries">
+        <h2>Country-Specific Pricing Details</h2>
+
+        <h3>Côte d'Ivoire</h3>
+        <table>
+            <tr>
+                <th>Montant</th>
+                <th>Prix</th>
+            </tr>
+            <tr>
+                <td>1M - 5M</td>
+                <td>100M</td>
+            </tr>
+            <tr>
+                <td>5M - 7M</td>
+                <td>150M</td>
+            </tr>
+            <tr>
+                <td>7M - 9M</td>
+                <td>200M</td>
+            </tr>
+        </table>
+
+        <h3>Ghana</h3>
+        <table>
+            <tr>
+                <th>Montant</th>
+                <th>Prix</th>
+            </tr>
+            <tr>
+                <td>1M - 5M</td>
+                <td>50 GHS</td>
+            </tr>
+            <tr>
+                <td>5M - 7M</td>
+                <td>70 GHS</td>
+            </tr>
+            <tr>
+                <td>7M - 9M</td>
+                <td>90 GHS</td>
+            </tr>
+        </table>
+
+        <h3>Nigeria</h3>
+        <table>
+            <tr>
+                <th>Montant</th>
+                <th>Prix</th>
+            </tr>
+            <tr>
+                <td>1M - 5M</td>
+                <td>10,000 NGN</td>
+            </tr>
+            <tr>
+                <td>5M - 7M</td>
+                <td>15,000 NGN</td>
+            </tr>
+            <tr>
+                <td>7M - 9M</td>
+                <td>20,000 NGN</td>
+            </tr>
+        </table>
+
+        <h3>Senegal</h3>
+        <table>
+            <tr>
+                <th>Montant</th>
+                <th>Prix</th>
+            </tr>
+            <tr>
+                <td>1M - 5M</td>
+                <td>50M FCFA</td>
+            </tr>
+            <tr>
+                <td>5M - 7M</td>
+                <td>75M FCFA</td>
+            </tr>
+            <tr>
+                <td>7M - 9M</td>
+                <td>100M FCFA</td>
+            </tr>
+        </table>
+
+        <!-- Add similar tables for remaining countries -->
     </section>
 
-    <script>
-        // JavaScript
-        document.getElementById('bankForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const query = document.getElementById('query').value;
-
-            if (name && email && query) {
-                alert(`Thank you, ${name}. We will respond to your query soon!`);
-            } else {
-                alert('Please fill out all required fields.');
-            }
-        });
-    </script>
+    <footer>
+        <p>&copy; 2025 Relevé Bancaire</p>
+    </footer>
 </body>
 </html>
