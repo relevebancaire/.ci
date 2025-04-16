@@ -1,12 +1,12 @@
 const releves = [
-    { nom: "Relevé bancaire standard", image: "images/societeg.jpg", prix: "10€" },
-    { nom: "Relevé bancaire détaillé", image: "images/societeg.jpg", prix: "20€" },
-    { nom: "Relevé bancaire premium", image: "images/societeg.jpg", prix: "30€" },
-    { nom: "Relevé bancaire VIP", image: "images/societeg.jpg", prix: "50€" },
-    { nom: "Relevé bancaire entreprise", image: "images/societeg.jpg", prix: "40€" },
-    { nom: "Relevé bancaire privé", image: "images/societeg.jpg", prix: "35€" },
-    { nom: "Relevé bancaire express", image: "images/societeg.jpg", prix: "15€" },
-    { nom: "Relevé bancaire luxe", image: "images/societeg.jpg", prix: "60€" }
+    { nom: "1.000.000 - 3.000.000", image: "images/societeg.jpg", prix: "70.000 Fcfa" },
+    { nom: "3.000.000 - 5.000.000", image: "images/societeg.jpg", prix: "100.000 Fcfa" },
+    { nom: "5.000.000 - 6.000.000", image: "images/societeg.jpg", prix: "130.000 Fcfa" },
+    { nom: "6.000.000 - 7.000.000", image: "images/societeg.jpg", prix: "160.000 Fcfa" },
+    { nom: "7.000.000 - 8.000.000", image: "images/societeg.jpg", prix: "190.000 Fcfa" },
+    { nom: "8.000.000 - 9.000.000", image: "images/societeg.jpg", prix: "220.000 Fcfa" },
+    { nom: "9.000.000 - 10.000.000", image: "images/societeg.jpg", prix: "250.000 Fcfa" },
+    { nom: "10.000.000 - 10.000.000+", image: "images/societeg.jpg", prix: "280.000 Fcfa" }
 ];
 
 function afficherReleves() {
@@ -28,25 +28,6 @@ function afficherReleves() {
 
         container.appendChild(div);
     });
-}
-
-// Function to handle pop-up image display (FORCED TO WORK)
-function afficherPopup(imageSrc) {
-    const popup = document.getElementById("imagePopup");
-    const popupImage = document.getElementById("popupImage");
-
-    if (!popup || !popupImage) {
-        console.error("Popup or popupImage element missing!");
-        return;
-    }
-
-    popup.style.display = "flex";
-    popupImage.src = imageSrc;
-}
-
-// Function to close the pop-up
-function fermerPopup() {
-    document.getElementById("imagePopup").style.display = "none";
 }
 
 document.addEventListener("DOMContentLoaded", afficherReleves);
