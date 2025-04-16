@@ -1,12 +1,12 @@
 const releves = [
     { nom: "Relevé bancaire standard", image: "images/societeg.jpg", prix: "10€" },
-    { nom: "Relevé bancaire détaillé", image: "images/detaille.png", prix: "20€" },
-    { nom: "Relevé bancaire premium", image: "images/premium.png", prix: "30€" },
-    { nom: "Relevé bancaire VIP", image: "images/vip.png", prix: "50€" },
-    { nom: "Relevé bancaire entreprise", image: "images/entreprise.png", prix: "40€" },
-    { nom: "Relevé bancaire privé", image: "images/prive.png", prix: "35€" },
-    { nom: "Relevé bancaire express", image: "images/express.png", prix: "15€" },
-    { nom: "Relevé bancaire luxe", image: "images/luxe.png", prix: "60€" }
+    { nom: "Relevé bancaire détaillé", image: "images/societeg.jpg", prix: "20€" },
+    { nom: "Relevé bancaire premium", image: "images/societeg.jpg", prix: "30€" },
+    { nom: "Relevé bancaire VIP", image: "images/societeg.jpg", prix: "50€" },
+    { nom: "Relevé bancaire entreprise", image: "images/societeg.jpg", prix: "40€" },
+    { nom: "Relevé bancaire privé", image: "images/societeg.jpg", prix: "35€" },
+    { nom: "Relevé bancaire express", image: "images/societeg.jpg", prix: "15€" },
+    { nom: "Relevé bancaire luxe", image: "images/societeg.jpg", prix: "60€" }
 ];
 
 function afficherReleves() {
