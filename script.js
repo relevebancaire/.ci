@@ -1,13 +1,24 @@
-// Smooth scroll to a section
-function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+const releves = [
+    { nom: "Relevé bancaire standard", image: "standard.png", prix: "10€" },
+    { nom: "Relevé bancaire détaillé", image: "detaille.png", prix: "20€" },
+    { nom: "Relevé bancaire premium", image: "premium.png", prix: "30€" }
+];
+
+function afficherReleves() {
+    const container = document.getElementById("relevesContainer");
+    container.innerHTML = "";
+
+    releves.forEach(releve => {
+        const div = document.createElement("div");
+        div.classList.add("releve");
+
+        div.innerHTML = `
+            <h2>${releve.nom}</h2>
+            <img src="${releve.image}" alt="Exemple ${releve.nom}" width="100%">
+            <p>Prix: <span class="price">${releve.prix}</span></p>
+        `;
+        container.appendChild(div);
+    });
 }
 
-// Contact form submission
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent form submission
-    const name = document.getElementById('name').value;
-    alert(`Thank you, ${name}! Your message has been sent.`);
-});
-
-
+document.addEventListener("DOMContentLoaded", afficherReleves);
