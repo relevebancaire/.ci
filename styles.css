@@ -56,7 +56,7 @@ body {
 /* Grid Container */
 .releves-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
 }
@@ -76,7 +76,7 @@ body {
     max-height: 150px;
 }
 
-/* Pop-up Styling */
+/* Pop-up Styling (FIXED) */
 .popup {
     display: none; /* Hidden by default */
     position: fixed;
@@ -102,39 +102,4 @@ body {
     font-size: 30px;
     color: white;
     cursor: pointer;
-}
-
-/* Partner Banks Section */
-.partners {
-    text-align: center;
-    margin: 40px 0;
-    padding: 20px;
-    background-color: #ecf0f1;
-}
-
-.partners h2 {
-    font-size: 24px;
-    color: #2c3e50;
-}
-
-.partner-logos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.partner-logos img {
-    width: 150px;
-    height: auto;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #2c3e50;
-    color: white;
-    margin-top: 20px;
 }
