@@ -1,5 +1,5 @@
 const releves = [
-    { nom: "Relevé bancaire standard", image: "images/standard.png", prix: "10€" },
+    { nom: "Relevé bancaire standard", image: "images/societeg.jpg", prix: "10€" },
     { nom: "Relevé bancaire détaillé", image: "images/detaille.png", prix: "20€" },
     { nom: "Relevé bancaire premium", image: "images/premium.png", prix: "30€" }
 ];
