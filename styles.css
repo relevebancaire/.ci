@@ -47,10 +47,24 @@ html, body {
 }
 
 /* Horizontal Separator */
-.separator {
+.separator1 {
     border: none;
-    height: 2px;
-    background-color: violet;
+    height: 8px;
+    background-color: orange;
+    margin: 0;
+}
+
+.separator2 {
+    border: none;
+    height: 8px;
+    background-color: white;
+    margin: 0;
+}
+
+.separator3 {
+    border: none;
+    height: 8px;
+    background-color: green;
     margin: 0;
 }
 
