@@ -44,6 +44,11 @@ html, body {
     text-decoration: underline;
 }
 
+.logo img {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+}
+
 /* Header */
 .header {
     text-align: center;
