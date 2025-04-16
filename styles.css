@@ -16,6 +16,7 @@ html, body {
     padding: 15px 30px;
     color: white;
     width: 100%;
+     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,28 +42,6 @@ html, body {
 
 .nav-links a:hover {
     text-decoration: underline;
-}
-
-/* Horizontal Separator */
-.separator1 {
-    border: none;
-    height: 8px;
-    background-color: orange;
-    margin: 5px;
-}
-
-.separator2 {
-    border: none;
-    height: 8px;
-    background-color: white;
-    margin: 5px;
-}
-
-.separator3 {
-    border: none;
-    height: 8px;
-    background-color: green;
-    margin: 5px;
 }
 
 /* Header */
@@ -94,7 +73,7 @@ html, body {
 
 .releve img {
     width: 100%;
-    height: 230px;
+    height: 100px;
 }
 
 /* Pop-up Styling (FIXED) */
@@ -108,21 +87,6 @@ html, body {
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
-}
-
-.popup img {
-    max-width: 80%;
-    max-height: 80%;
-    border: 2px solid white;
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
 }
 
 /* Partner Banks Section */
