@@ -17,13 +17,28 @@ function afficherReleves() {
         const div = document.createElement("div");
         div.classList.add("releve");
 
-        div.innerHTML = `
-            <h2>${releve.nom}</h2>
-            <img src="${releve.image}" alt="${releve.nom}">
-            <p>Prix: <span class="price">${releve.prix}</span></p>
-        `;
+        const img = document.createElement("img");
+        img.src = releve.image;
+        img.alt = releve.nom;
+        img.addEventListener("click", () => afficherPopup(releve.image)); // Click event
+
+        div.innerHTML = `<h2>${releve.nom}</h2>`;
+        div.appendChild(img);
+        div.innerHTML += `<p>Prix: <span class="price">${releve.prix}</span></p>`;
+
         container.appendChild(div);
     });
+}
+
+function afficherPopup(imageSrc) {
+    const popup = document.getElementById("imagePopup");
+    const popupImage = document.getElementById("popupImage");
+    popup.style.display = "flex";
+    popupImage.src = imageSrc;
+}
+
+function fermerPopup() {
+    document.getElementById("imagePopup").style.display = "none";
 }
 
 document.addEventListener("DOMContentLoaded", afficherReleves);
