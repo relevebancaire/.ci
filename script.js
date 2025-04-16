@@ -30,13 +30,21 @@ function afficherReleves() {
     });
 }
 
+// Function to handle pop-up image display (FORCED TO WORK)
 function afficherPopup(imageSrc) {
     const popup = document.getElementById("imagePopup");
     const popupImage = document.getElementById("popupImage");
+
+    if (!popup || !popupImage) {
+        console.error("Popup or popupImage element missing!");
+        return;
+    }
+
     popup.style.display = "flex";
     popupImage.src = imageSrc;
 }
 
+// Function to close the pop-up
 function fermerPopup() {
     document.getElementById("imagePopup").style.display = "none";
 }
