@@ -30,4 +30,31 @@ function afficherReleves() {
     });
 }
 
+// Function to handle pop-up image display with smooth animation
+function afficherPopup(imageSrc) {
+    const popup = document.getElementById("imagePopup");
+    const popupImage = document.getElementById("popupImage");
+
+    if (!popup || !popupImage) {
+        console.error("Popup or popupImage element missing!");
+        return;
+    }
+
+    popup.style.display = "flex";
+    popupImage.src = imageSrc;
+    popup.style.opacity = "0";
+    setTimeout(() => {
+        popup.style.opacity = "1"; // Smooth transition
+    }, 100);
+}
+
+// Function to close the pop-up smoothly
+function fermerPopup() {
+    const popup = document.getElementById("imagePopup");
+    popup.style.opacity = "0";
+    setTimeout(() => {
+        popup.style.display = "none";
+    }, 200);
+}
+
 document.addEventListener("DOMContentLoaded", afficherReleves);
