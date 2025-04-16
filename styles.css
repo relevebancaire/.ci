@@ -53,13 +53,31 @@ body {
     font-size: 24px;
 }
 
-/* Container */
-.container {
-    max-width: 800px;
-    margin: auto;
-    background-color: white;
+/* Grid Container */
+.releves-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
     padding: 20px;
+}
+
+/* Individual Releve */
+.releve {
+    background-color: white;
+    padding: 15px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.releve img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+.price {
+    font-weight: bold;
+    color: #e74c3c;
 }
 
 /* Partner Banks Section */
