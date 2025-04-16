@@ -2,11 +2,11 @@
 html, body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 5px;
     overflow-x: hidden; /* Prevents horizontal scrolling */
-    width: 100%;
+    max-width: 100%;
     background-color: #f5f5f5;
-    padding-top: 80px; /* Adjust to match navbar height */
+    padding-top: 30px; /* Adjust to match navbar height */
 }
 
 /* Fixed Navbar */
@@ -15,7 +15,7 @@ html, body {
     top: 0;
     left: 0;
     right: 25px;
-    width: 100%;
+    max-width: 100%;
     background-color: #2c3e50;
     padding: 15px 15px;
     color: white;
@@ -98,7 +98,7 @@ html, body {
 .releve img {
     width: 100%;
     height: auto;
-    max-height: 150px;
+    max-height: 170px;
 }
 
 /* Pop-up Styling (FIXED) */
