@@ -6,7 +6,7 @@ html, body {
     overflow-x: hidden; /* Prevents horizontal scrolling */
     max-width: 100%;
     background-color: #f5f5f5;
-    padding-top: 30px; /* Adjust to match navbar height */
+    padding-top: 50px; /* Adjust to match navbar height */
 }
 
 /* Fixed Navbar */
@@ -14,8 +14,7 @@ html, body {
     position: fixed; /* Stays in place */
     top: 0;
     left: 0;
-    right: 25px;
-    max-width: 100%;
+    right: 15px;
     background-color: #2c3e50;
     padding: 15px 15px;
     color: white;
