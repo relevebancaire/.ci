@@ -68,10 +68,6 @@ html, body {
         text-align: right;
         padding: 10px;
     }
-    .releves-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
     .nav-links.show {
         display: flex;
     }
@@ -154,7 +150,6 @@ html, body {
     cursor: pointer;
 }
 
-
 /* About Section */
 .about {
     max-width: 800px;
@@ -178,7 +173,6 @@ html, body {
     font-size: 18px;
     margin: 10px 0;
 }
-
 /* Partner Banks Section */
 .partners {
     text-align: center;
