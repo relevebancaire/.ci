@@ -69,7 +69,6 @@ html, body {
         padding: 10px;
     }
 
-
     .releves-container {
         display: grid;
         grid-template-columns: 1fr; /* Restricts grid to a single column */
@@ -183,10 +182,9 @@ html, body {
     margin: 10px 0;
 }
 
-
 /* About Section */
 .tc {
-    max-width: 800px;
+    max-width: 1400px;
     margin: auto;
     padding: 40px;
     text-align: center;
@@ -206,7 +204,7 @@ html, body {
 .tc ul li {
     font-size: 18px;
     margin: 10px 0;
-
+}
 
 /* Partner Banks Section */
 .partners {
