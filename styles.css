@@ -120,8 +120,6 @@ html, body {
     height: auto;
 }
 
-
-
 /* Pop-up Styling with Animation */
 .popup {
     display: none;
@@ -212,8 +210,8 @@ html, body {
 /* Footer */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     background-color: black;
     color: white;
-    margin-top: 20px;
+    margin-top: 10px;
 }
