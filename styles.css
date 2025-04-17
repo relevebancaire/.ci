@@ -217,6 +217,20 @@
    }
 }
 
+.afrique {
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Keeps it aligned */
+    z-index: 999; /* Ensures it stays on top */
+}
+
+.afrique img {
+    width: 100px; /* Adjust for proper sizing */
+    height: auto;
+    opacity: 0.9; /* Slight transparency for smooth effect */
+}
+
+
     /* Mobile Footer */
     footer {
         text-align: center;
