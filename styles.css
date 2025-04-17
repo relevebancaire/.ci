@@ -110,6 +110,18 @@
     height: auto;
     opacity: 0.9; /* Slight transparency for smooth effect */
    }
+
+
+
+     .partner-logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .partner-logos img {
+        width: 80px; /* Smaller size for mobile */
+        height: auto;
+    }
 }
 
 /* =================== MOBILE STYLES =================== */
@@ -242,6 +254,18 @@
     height: auto;
     opacity: 0.9; /* Slight transparency for smooth effect */
   }
+
+
+    .partner-logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .partner-logos img {
+        width: 80px; /* Smaller size for mobile */
+        height: auto;
+    }
+    
 }
 
     /* Mobile Footer */
