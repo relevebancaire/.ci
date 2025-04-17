@@ -87,8 +87,8 @@ html, body {
 
 /* Logo */
 .logo img {
-    height: 40px; /* Adjust as needed */
-    width: auto;
+    height: 25px; 
+    width: 25px;
 }
 
 /* Grid Container */
