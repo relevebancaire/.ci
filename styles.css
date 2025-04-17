@@ -119,7 +119,7 @@
     }
 
     .partner-logos img {
-        width: 80px; /* Smaller size for mobile */
+        width: auto; /* Smaller size for mobile */
         height: auto;
     }
 }
@@ -262,7 +262,7 @@
     }
 
     .partner-logos img {
-        width: 80px; /* Smaller size for mobile */
+        width: auto; /* Smaller size for mobile */
         height: auto;
     }
     
