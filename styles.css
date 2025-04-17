@@ -45,6 +45,12 @@
     transform: scale(1.1);
 }
 
+/* Logo */
+.logo img {
+    height: 25px; 
+    width: 25px;
+}
+    /* Grid Container */
     .releves-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* 4-column layout for PC */
@@ -130,6 +136,12 @@
         display: flex;
     }
 
+    /* Logo */
+.logo img {
+    height: 25px; 
+    width: 25px;
+}
+      /* Grid Container */
      .releves-container {
         display: grid;
         grid-template-columns: 1fr; /* Ensures a single-column layout */
