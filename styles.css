@@ -205,10 +205,9 @@
     padding: 20px;
     transition: right 0.3s ease-in-out;
 }
-
-.nav-links.show {
+    .nav-links.active {
     display: flex;
-    right: 0; /* Slides in from right */
+    right: 0; /* Slides in */
 }
 
     /* About Section */
