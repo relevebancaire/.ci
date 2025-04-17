@@ -130,10 +130,6 @@
         display: flex;
     }
 
-    .menu-toggle {
-        display: block;
-    } 
-    
      .releves-container {
         display: grid;
         grid-template-columns: 1fr; /* Ensures a single-column layout */
@@ -159,7 +155,15 @@
     width: 100%;
     height: auto;
 }
- 
+
+    .menu-toggle {
+        display: block; /* Makes it visible only on mobile */
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+    }
+
     /* About Section */
 .about, .tc {
     max-width: 1400px;
