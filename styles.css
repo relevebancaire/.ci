@@ -181,13 +181,13 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 50px;
+    top: 40px;
     right: -250px; /* Initially hidden outside viewport */
     background: linear-gradient(to right, orange, white, green);
     width: auto;
     height: auto;
     text-align: justify;
-    padding: 30px;
+    padding: 20px;
     transition: right 0.3s ease-in-out;
 }
     .nav-links.active {
@@ -202,7 +202,7 @@
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 30px;
     transition: all 0.3s ease-in-out;
 }
 
