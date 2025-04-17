@@ -1,3 +1,4 @@
+// Bank statements data
 const releves = [
     { nom: "1.000.000 - 3.000.000", image: "images/societeg.jpg", prix: "70.000 Fcfa" },
     { nom: "3.000.000 - 5.000.000", image: "images/societeg.jpg", prix: "100.000 Fcfa" },
@@ -9,6 +10,7 @@ const releves = [
     { nom: "10.000.000 - 10.000.000+", image: "images/societeg.jpg", prix: "280.000 Fcfa" }
 ];
 
+// Function to display bank statements dynamically
 function afficherReleves() {
     const container = document.getElementById("relevesContainer");
     container.innerHTML = "";
@@ -20,6 +22,7 @@ function afficherReleves() {
         const img = document.createElement("img");
         img.src = releve.image;
         img.alt = releve.nom;
+        img.classList.add("fade-in"); // Adds fade-in animation
         img.addEventListener("click", () => afficherPopup(releve.image)); // Click event
 
         div.innerHTML = `<h2>${releve.nom}</h2>`;
@@ -30,7 +33,7 @@ function afficherReleves() {
     });
 }
 
-// Function to handle pop-up image display with smooth animation
+// Function to display pop-up image with smooth animation
 function afficherPopup(imageSrc) {
     const popup = document.getElementById("imagePopup");
     const popupImage = document.getElementById("popupImage");
@@ -41,11 +44,17 @@ function afficherPopup(imageSrc) {
     }
 
     popup.style.display = "flex";
-    popupImage.src = imageSrc;
-    popup.style.opacity = "0";
+    popupImage.src = "";
+    popupImage.classList.add("loading"); // Add loading class
+
     setTimeout(() => {
-        popup.style.opacity = "1"; // Smooth transition
-    }, 100);
+        popupImage.src = imageSrc;
+        popupImage.classList.remove("loading"); // Remove loading class
+        popup.style.opacity = "0";
+        setTimeout(() => {
+            popup.style.opacity = "1"; // Smooth transition
+        }, 100);
+    }, 300);
 }
 
 // Function to close the pop-up smoothly
@@ -57,4 +66,35 @@ function fermerPopup() {
     }, 200);
 }
 
-document.addEventListener("DOMContentLoaded", afficherReleves);
+// Function to load pages dynamically into the main content area
+function loadPage(page) {
+    fetch(page)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("content").innerHTML = data;
+            window.history.pushState({}, "", page); // Updates URL dynamically without reload
+        })
+        .catch(error => console.error("Error loading page:", error));
+}
+
+// Handle browser navigation (back/forward buttons) without losing dynamic loading
+window.addEventListener("popstate", function () {
+    loadPage(window.location.pathname.substring(1));
+});
+
+// Mobile Menu Toggle
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+    });
+
+    // Ensure default page loads when the site is first opened
+    const initialPage = window.location.pathname.substring(1) || "about.html"; 
+    loadPage(initialPage);
+
+    // Display bank statements dynamically
+    afficherReleves();
+});
