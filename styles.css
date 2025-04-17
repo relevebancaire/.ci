@@ -195,6 +195,17 @@
     right: 0; /* Slides in */
 }
 
+    .nav-links li {
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
     /* About Section */
 .about, .tc {
     max-width: 1400px;
