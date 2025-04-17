@@ -18,7 +18,7 @@
         margin-right: 40px;
         display: flex;
         /*justify-content: space-between;*/
-        justify-content: 20px;
+        justify-content: 320px;
         align-items: center;
         margin-bottom: 12px; /* Adjust to match navbar height */
     }
