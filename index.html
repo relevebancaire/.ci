@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relevés Bancaires Dynamiques</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="images/favicon.png"> <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
@@ -14,52 +14,18 @@
         <div class="logo">
             <img src="images/logo.jpg" alt="Company Logo">
         </div>
-        <div class="menu-toggle">☰</div> <!-- Mobile Toggle Button -->
+        <div class="menu-toggle">☰</div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="tc.html">Termes&Conditions</a></li>
+            <li><a href="#" onclick="loadPage('about.html')">About</a></li>
+            <li><a href="#" onclick="loadPage('contact.html')">Contact Us</a></li>
+            <li><a href="#" onclick="loadPage('tc.html')">Termes & Conditions</a></li>
         </ul>
     </nav>
 
-    <!-- Header Section -->
-    <div class="header" id="home">
-        Relevés Bancaires & Tarification
-    </div>
-
-    <!-- Main Content (Grid Layout) -->
-    <div class="container releves-container" id="relevesContainer">
-        <!-- Bank statements dynamically generated here -->
-    </div>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h1>Qui sommes-nous ?</h1>
-        <p>Bienvenue chez <strong>Mon Business</strong>, votre partenaire de confiance pour des services bancaires dynamiques et professionnels. 
-        Nous nous engageons à offrir des solutions financières sécurisées et accessibles à tous.</p>
-
-        <h2>Notre Mission</h2>
-        <p>Notre mission est de fournir des services bancaires transparents et innovants. Nous mettons à votre disposition des relevés bancaires fiables et des partenariats avec les institutions financières les plus réputées.</p>
-
-        <h2>Nos Valeurs</h2>
-        <ul>
-            <li><strong>Fiabilité</strong> - Nous garantissons des informations précises et sécurisées.</li>
-            <li><strong>Innovation</strong> - Nous intégrons les dernières technologies pour améliorer votre expérience bancaire.</li>
-            <li><strong>Accessibilité</strong> - Nos services sont conçus pour répondre aux besoins de tous.</li>
-        </ul>
-    </section>
-
-    <!-- Partner Banks Section -->
-    <div class="partners">
-        <h2>Nos Partenaires</h2>
-        <p>Nous collaborons avec les principales banques et institutions financières pour assurer des services de qualité.</p>
-        <div class="partner-logos">
-            <img src="images/sg.jpg" alt="Bank 1">
-            <img src="images/orag.jpg" alt="Bank 2">
-            <img src="images/nsia.jpg" alt="Bank 3">
-            <img src="images/coris.jpg" alt="Bank 4">
-            <img src="images/uba.jpg" alt="Bank 5">
-        </div>
+    <!-- Main Content (Dynamic Section) -->
+    <div class="container" id="content">
+        <h2>Bienvenue sur Mon Business</h2>
+        <p>Sélectionnez une option dans le menu pour charger le contenu dynamiquement.</p>
     </div>
 
     <!-- Footer -->
@@ -68,6 +34,5 @@
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
