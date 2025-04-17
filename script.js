@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Ensure default page loads when the site is first opened
-    const initialPage = window.location.pathname.substring(1) || "about.html"; 
+    const initialPage = window.location.pathname.substring(1) || "index.html"; 
     loadPage(initialPage);
 
     // Display bank statements dynamically
