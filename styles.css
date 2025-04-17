@@ -101,6 +101,19 @@
     scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
+
+    /* Navbar */
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #2c3e50;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
 .nav-links {
         display: none;
         flex-direction: column;
@@ -119,7 +132,7 @@
 
     .menu-toggle {
         display: block;
-    }
+    } 
     
      .releves-container {
         display: grid;
@@ -146,15 +159,7 @@
     width: 100%;
     height: auto;
 }
-
-/* Mobile-Friendly Menu Toggle */
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-}
-      
+ 
     /* About Section */
 .about, .tc {
     max-width: 1400px;
