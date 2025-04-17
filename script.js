@@ -83,14 +83,30 @@ window.addEventListener("popstate", function () {
     loadPage(window.location.pathname.substring(1));
 });
 
-// Mobile Menu Toggle
+
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
 
-    menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
+    // Toggle menu visibility with slide-in effect
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
     });
+
+    // Close menu when clicking outside or selecting a menu item
+    document.addEventListener("click", function (event) {
+        if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+            navLinks.classList.remove("active");
+        }
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(item => {
+        item.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+        });
+    });
+});
+
 
     // Ensure default page loads when the site is first opened
     const initialPage = window.location.pathname.substring(1) || "index.html"; 
