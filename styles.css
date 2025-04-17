@@ -219,7 +219,7 @@
 
 .afrique {
     position: fixed;
-    top: 40px; /* Adjust as needed */
+    bottom: 40px; /* Adjust as needed */
     right: 40px; /* Keeps it aligned */
     z-index: 999; /* Ensures it stays on top */
 }
