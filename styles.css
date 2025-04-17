@@ -219,8 +219,8 @@
 
 .afrique {
     position: fixed;
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Keeps it aligned */
+    top: 40px; /* Adjust as needed */
+    left: -100px; /* Keeps it aligned */
     z-index: 999; /* Ensures it stays on top */
 }
 
