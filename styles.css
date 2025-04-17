@@ -73,6 +73,11 @@ html, body {
     transform: scale(1.05); /* Slightly enlarges on hover */
 }
 
+.releve img {
+    width: 100%;
+    height: auto;
+}
+
 /* About Section */
 .about, .tc {
     max-width: 1400px;
