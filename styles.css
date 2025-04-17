@@ -6,7 +6,6 @@
     margin: 0;
     overflow-x: hidden; /* Prevents horizontal scrolling */
     background-color: #f5f5f5;
-    margin-top: 12px; /* Adjust to match navbar height */
     scroll-behavior: smooth; /* Enables smooth scrolling */
 }
     /* Navbar */
@@ -18,8 +17,10 @@
         padding-left: 10px;
         margin-right: 40px;
         display: flex;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
+        justify-content: 20px;
         align-items: center;
+        margin-bottom: 12px; /* Adjust to match navbar height */
     }
 
     * Navbar Links */
