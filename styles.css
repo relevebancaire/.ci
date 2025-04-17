@@ -97,6 +97,19 @@
     background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
    }
+
+    .afrique {
+    position: fixed;
+    bottom: 10px; /* Adjust as needed */
+    right: 15px; /* Keeps it aligned */
+    z-index: 999; /* Ensures it stays on top */
+}
+
+.afrique img {
+    width: 90px; /* Adjust for proper sizing */
+    height: auto;
+    opacity: 0.9; /* Slight transparency for smooth effect */
+   }
 }
 
 /* =================== MOBILE STYLES =================== */
@@ -215,21 +228,21 @@
     background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
    }
-}
 
-.afrique {
+
+    .afrique {
     position: fixed;
-    bottom: 20px; /* Adjust as needed */
-    right: 15px; /* Keeps it aligned */
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Keeps it aligned */
     z-index: 999; /* Ensures it stays on top */
 }
 
 .afrique img {
-    width: 80px; /* Adjust for proper sizing */
+    width: 60px; /* Adjust for proper sizing */
     height: auto;
     opacity: 0.9; /* Slight transparency for smooth effect */
+  }
 }
-
 
     /* Mobile Footer */
     footer {
