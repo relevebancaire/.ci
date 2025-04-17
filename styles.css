@@ -1,14 +1,14 @@
 /* =================== PC STYLES =================== */
 @media screen and (min-width: 769px) {
     /* Body */
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-        margin: 0;
-        padding: 0;
-        color: #333;
-    }
-
+    html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color: #f5f5f5;
+    margin-top: 12px; /* Adjust to match navbar height */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
     /* Navbar */
     .navbar {
         position: fixed;
@@ -81,28 +81,20 @@
     text-align: justify;
     background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-}
-
-    /* Footer */
-    footer {
-        text-align: center;
-        padding: 15px;
-        background-color: black;
-        color: white;
-        margin-top: 20px;
-    }
+   }
 }
 
 /* =================== MOBILE STYLES =================== */
 @media screen and (max-width: 768px) {
     /* Override PC styles */
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #ffffff; /* Different background for mobile */
-        margin: 0;
-        padding: 0;
-        color: #333;
-    }
+    html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color: #f5f5f5;
+    margin-top: 12px; /* Adjust to match navbar height */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
 
     /* Navbar */
     .navbar {
@@ -141,6 +133,8 @@
         padding: 15px;
     }
 
+}
+
     /* Mobile Footer */
     footer {
         text-align: center;
@@ -149,4 +143,3 @@
         color: white;
         font-size: 14px;
     }
-}
