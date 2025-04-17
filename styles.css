@@ -68,6 +68,15 @@ html, body {
         text-align: right;
         padding: 10px;
     }
+
+
+    .releves-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Restricts grid to a single column */
+        gap: 15px;
+        padding: 15px;
+    }
+    
     .nav-links.show {
         display: flex;
     }
