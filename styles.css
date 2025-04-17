@@ -180,10 +180,10 @@
 
    .menu-toggle {
     display: block; /* Ensures visibility on mobile */
-    font-size: 35px;
+    font-size: 40px;
     color: white;
     cursor: pointer;
-    margin-left: 70px;
+    margin-left: 80px;
     /*padding-right: 30px;*/
     transition: transform 0.3s ease-in-out;
 }
