@@ -219,13 +219,13 @@
 
 .afrique {
     position: fixed;
-    bottom: 40px; /* Adjust as needed */
-    right: 40px; /* Keeps it aligned */
+    bottom: 20px; /* Adjust as needed */
+    right: 15px; /* Keeps it aligned */
     z-index: 999; /* Ensures it stays on top */
 }
 
 .afrique img {
-    width: 100px; /* Adjust for proper sizing */
+    width: 80px; /* Adjust for proper sizing */
     height: auto;
     opacity: 0.9; /* Slight transparency for smooth effect */
 }
