@@ -2,18 +2,21 @@
 html, body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     overflow-x: hidden; /* Prevents horizontal scrolling */
     background-color: #f5f5f5;
+    padding-top: 60px; /* Adjust to match navbar height */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
-/* Fixed & Interactive Navbar */
+/* Fixed & Responsive Navbar */
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background-color: #2c3e50;
     padding: 15px 20px;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +31,10 @@ html, body {
     margin-right: 20px;
 }
 
+.nav-links li {
+    display: inline;
+}
+
 .nav-links a {
     text-decoration: none;
     color: white;
@@ -40,27 +47,52 @@ html, body {
     transform: scale(1.1);
 }
 
-/* Dynamic Content */
-#content {
-    padding: 40px;
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.5s ease-in-out;
+/* Mobile-Friendly Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
 }
 
-/* Smooth Fade-in Effect */
-.fade-in {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #2c3e50;
+        width: 200px;
+        text-align: right;
+        padding: 10px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }
 
-.fade-in.loaded {
-    opacity: 1;
+/* Logo */
+.logo img {
+    height: 40px; /* Adjust as needed */
+    width: auto;
 }
 
-/* Releve Cards */
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: red;
+    font-size: 30px;
+}
+
+/* Grid Container */
 .releves-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -69,17 +101,18 @@ html, body {
     max-width: 100%;
 }
 
+/* Individual Releve */
 .releve {
     background-color: white;
     padding: 15px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     text-align: center;
-    cursor: pointer;
+    cursor: pointer; /* Clickable */
     transition: all 0.3s ease-in-out;
 }
 
 .releve:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slightly enlarges on hover */
 }
 
 .releve img {
@@ -87,7 +120,7 @@ html, body {
     height: auto;
 }
 
-/* Pop-up Effects */
+/* Pop-up Styling with Animation */
 .popup {
     display: none;
     position: fixed;
@@ -117,10 +150,68 @@ html, body {
     cursor: pointer;
 }
 
+
+/* About Section */
+.about {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.about h1, .about h2 {
+    color: #2c3e50;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Partner Banks Section */
+.partners {
+    text-align: center;
+    width: 100%;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.partners h2 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.partner-logos img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.partner-logos img:hover {
+    transform: scale(1.1);
+}
+
 /* Footer */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     background-color: black;
     color: white;
+    margin-top: 10px;
 }
