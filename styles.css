@@ -73,6 +73,11 @@
     height: auto;
 }
 
+/* Hide menu toggle by default (PC view) */
+.menu-toggle {
+    display: none;
+}
+    
 /* About Section */
 .about, .tc {
     max-width: 1400px;
@@ -141,6 +146,15 @@
     width: 100%;
     height: auto;
 }
+
+/* Mobile-Friendly Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+      
     /* About Section */
 .about, .tc {
     max-width: 1400px;
