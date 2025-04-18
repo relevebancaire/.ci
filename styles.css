@@ -90,14 +90,49 @@
     
 /* About Section */
 .about, .tc {
-    max-width: 1450px;
+    max-width: 1400px;
     margin: auto;
-    /*padding: 40px;*/
-    padding: 20px;
+    padding: 30px;
     text-align: justify;
     background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
    }
+
+    .about p, .tc p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about ul, .tc ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.about li, .tc li {
+    font-size: 16px;
+    color: #444;
+    padding: 5px 0;
+}
+
+.about h2, .tc h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-left: 4px solid #ffa500;
+    padding-left: 10px;
+}
+
+.about h3, .tc h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
 
     .afrique {
     position: fixed;
@@ -248,6 +283,41 @@
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
    }
 
+   .about p, .tc p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about ul, .tc ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.about li, .tc li {
+    font-size: 16px;
+    color: #444;
+    padding: 5px 0;
+}
+
+.about h2, .tc h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-left: 4px solid #ffa500;
+    padding-left: 10px;
+}
+
+.about h3, .tc h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
 
     .afrique {
     position: fixed;
