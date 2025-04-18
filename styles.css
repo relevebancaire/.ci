@@ -269,15 +269,15 @@
         display: grid;
         top: 0;
         grid-template-columns: repeat(3, 1fr); /* 3-column layout for PC */
-        gap: 8px;
-        padding: 8px;
-        max-width: 25px;
+        gap: 2px;
+        padding: 2px;
+        max-width: 15px;
         margin: auto;
     }
 
     .partner-logos img {
-        width: auto; /* Smaller size for mobile */
-        height: auto;
+        width: 10px; 
+        height: 10px;
     }
     
 }
