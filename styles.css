@@ -153,6 +153,16 @@
         width: auto; /* Smaller size for mobile */
         height: auto;
     }
+
+    /* Mobile Footer */
+    footer {
+        text-align: center;
+        padding: 6px;
+        background-color: black; 
+        color: white;
+        font-size: 12px;
+    }
+
 }
 
 /* =================== MOBILE STYLES =================== */
@@ -310,7 +320,6 @@
     opacity: 0.9; /* Slight transparency for smooth effect */
   }
 
-
    .partner-logos {
         flex-wrap: wrap;
         justify-content: center;
@@ -328,14 +337,13 @@
         width: 115px; 
         height: 55px;
     }
-    
-}
 
     /* Mobile Footer */
     footer {
         text-align: center;
-        padding: 6px;
+        padding: 2px;
         background-color: black; 
         color: white;
-        font-size: 12px;
+        font-size: 10px;
     }
+}
