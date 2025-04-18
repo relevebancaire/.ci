@@ -322,9 +322,10 @@
     /* Mobile Footer */
     footer {
         text-align: center;
-        padding: 2px;
+        padding: 4px;
         background-color: black; 
         color: white;
-        font-size: 8px;
+        font-size: 10px;
+        heigth: 45px;
     }
 }
