@@ -269,14 +269,14 @@
         display: grid;
         top: 0;
         grid-template-columns: repeat(3, 1fr); /* 3-column layout for PC */
-        gap: 2px;
-        padding: 2px;
+        gap: 4px;
+        padding: 4px;
         max-width: 15px;
         margin: auto;
     }
 
     .partner-logos img {
-        width: 105px; 
+        width: 115px; 
         height: 55px;
     }
     
