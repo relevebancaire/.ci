@@ -174,8 +174,7 @@
     overflow-x: hidden; /* Prevents horizontal scrolling */
     background-color: #f5f5f5;
     margin-top: 35px; /* Adjust to match navbar height */
-    scroll-behavior: smooth; /* Enables smooth scrolling */
-        
+    scroll-behavior: smooth; /* Enables smooth scrolling */        
 }
 
     /* Navbar */
@@ -190,7 +189,6 @@
     align-items: center;
 }
    
-
 .logo {
     flex: 0; /* Ensures logo stays fixed */
 }
@@ -199,8 +197,7 @@
 .logo img {
     height: 60px; 
     width: auto;
-}
-    
+}   
       /* Grid Container */
      .releves-container {
         top: 0;
@@ -223,12 +220,10 @@
 .releve:hover {
     transform: scale(1.05); /* Slightly enlarges on hover */
 }
-
 .releve img {
     width: 100%;
     height: auto;
 }
-
    .menu-toggle {
     display: block; /* Ensures visibility on mobile */
     font-size: 45px;
@@ -237,11 +232,9 @@
     margin-right: 25px;
     transition: transform 0.3s ease-in-out;
 }
-
 .menu-toggle:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
-
 /* Navbar Links Styling */
 .nav-links {
     display: none;
@@ -260,18 +253,15 @@
     display: flex;
     right: 0; /* Slides in */
 }
-
     .nav-links li {
     display: flex;
 }
-
 .nav-links a {
     text-decoration: none;
     color: white;
     font-size: 30px;
     transition: all 0.3s ease-in-out;
 }
-
     /* About Section */
 .about, .tc {
     max-width: 1400px;
@@ -281,14 +271,12 @@
     background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
    }
-
    .about p, .tc p {
     font-size: 12px;
     line-height: 1.1;
     color: #333;
     margin-bottom: 5px;
 }
-
 .about h2, .tc h2 {
     font-size: 12px;
     color: #2c3e50;
@@ -298,7 +286,6 @@
     border-left: 4px solid #ffa500;
     padding-left: 10px;
 }
-
 .about h3, .tc h3 {
     font-size: 12px;
     color: #2c3e50;
@@ -306,24 +293,20 @@
     margin-top: 5px;
     text-transform: capitalize;
 }
-
     .afrique {
     position: fixed;
     bottom: 10px; /* Adjust as needed */
     right: 10px; /* Keeps it aligned */
     z-index: 999; /* Ensures it stays on top */
 }
-
 .afrique img {
     width: 60px; /* Adjust for proper sizing */
     height: auto;
     opacity: 0.9; /* Slight transparency for smooth effect */
   }
-
    .partner-logos {
         flex-wrap: wrap;
         justify-content: center;
-
         display: grid;
         top: 0;
         grid-template-columns: repeat(3, 1fr); /* 3-column layout for PC */
@@ -332,18 +315,16 @@
         max-width: 15px;
         margin: auto;
     }
-
     .partner-logos img {
         width: 115px; 
         height: 55px;
     }
-
     /* Mobile Footer */
     footer {
         text-align: center;
         padding: 2px;
         background-color: black; 
         color: white;
-        font-size: 10px;
+        font-size: 8px;
     }
 }
