@@ -111,8 +111,6 @@
     opacity: 0.9; /* Slight transparency for smooth effect */
    }
 
-
-
      .partner-logos {
         flex-wrap: wrap;
         justify-content: center;
@@ -264,9 +262,17 @@
   }
 
 
-    .partner-logos {
+   .partner-logos {
         flex-wrap: wrap;
         justify-content: center;
+
+        display: grid;
+        top: 0;
+        grid-template-columns: repeat(4, 1fr); /* 4-column layout for PC */
+        gap: 20px;
+        padding: 25px;
+        max-width: 60px;
+        margin: auto;
     }
 
     .partner-logos img {
