@@ -268,10 +268,10 @@
 
         display: grid;
         top: 0;
-        grid-template-columns: repeat(4, 1fr); /* 4-column layout for PC */
-        gap: 20px;
-        padding: 25px;
-        max-width: 60px;
+        grid-template-columns: repeat(3, 1fr); /* 3-column layout for PC */
+        gap: 8px;
+        padding: 8px;
+        max-width: 25px;
         margin: auto;
     }
 
