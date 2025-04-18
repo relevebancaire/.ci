@@ -333,7 +333,7 @@
 
     /* Mobile Footer */
     footer {
-        /*text-align: center;*/
+        text-align: center;
         padding: 6px;
         background-color: #2c3e50; 
         color: white;
