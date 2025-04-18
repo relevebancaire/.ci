@@ -105,17 +105,6 @@
     margin-bottom: 15px;
 }
 
-.about ul, .tc ul {
-    padding-left: 20px;
-    list-style-type: disc;
-}
-
-.about li, .tc li {
-    font-size: 16px;
-    color: #444;
-    padding: 5px 0;
-}
-
 .about h2, .tc h2 {
     font-size: 24px;
     color: #2c3e50;
@@ -288,17 +277,6 @@
     line-height: 1.6;
     color: #333;
     margin-bottom: 15px;
-}
-
-.about ul, .tc ul {
-    padding-left: 20px;
-    list-style-type: disc;
-}
-
-.about li, .tc li {
-    font-size: 16px;
-    color: #444;
-    padding: 5px 0;
 }
 
 .about h2, .tc h2 {
